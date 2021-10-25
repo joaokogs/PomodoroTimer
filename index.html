@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="icon.png">
+</head>
+<body>
+    <h1>Pomodoro timer</h1>
+    <div class="container">
+        <div class="sessao">
+            <p>Sessão</p>
+            <div class="contador">
+                <span class="timer" id="smin">25</span> :
+                <span class="timer" id="ssec">00</span>
+            </div>
+            <div class="botao">
+                <button onclick="iniciarPomodoro()" class="btnIniciar">Iniciar</button>
+                <button onclick="pausar()" class="btnPausar">Pausar</button>
+                <button onclick="resetar()">Resetar</button>
+            </div>
+        </div>
+        <div class="intervalo">
+            <p>Intervalo</p>
+            <div class="contador">
+                <span class="timer" id="imin">10</span> :
+                <span class="timer" id="isec">00</span>
+            </div>
+            <div class="botao">
+                <button onclick="iniciarIntervalo()" class="btnIniciar2">Iniciar</button>
+                <button onclick="pauseInnterval()" class="btnPausar2">Pausar</button>
+                <button onclick="resetar()">Resetar</button>
+            </div>
+        </div>
+        <div class="extra">
+            <div class="aumentar-sessao">     
+                <p>Aumentar sessão</p>
+                <div>
+                    <i class="fas fa-chevron-circle-up" onclick="aumentarSessao()"></i>
+                    <span id="tempoSessao">25:00</span>
+                    <i class="fas fa-chevron-circle-down" onclick="diminuirSessao()"></i>
+                </div>
+            </div>
+            <div class="aumentar-intevalo">
+                <p>Aumentar intervalo</p>
+                <div>
+                    <i class="fas fa-chevron-circle-up" onclick="aumentarIntervalo()"></i>
+                    <span id="tempoIntervalo">10:00</span>
+                    <i class="fas fa-chevron-circle-down" onclick="diminuirIntervalo()"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
