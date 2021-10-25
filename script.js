@@ -71,8 +71,8 @@ function resetar(){
     document.querySelector('.btnIniciar').style.display = '';
     document.querySelector('.btnPausar').style.display = 'none';
 
-    let sm = sinit;
-    let ss = 0;
+    sm = sinit;
+    ss = 0;
 
     smin.innerHTML = (sm>9) ? ('' + sm) : ('0' + sm);
     ssec.innerHTML = (ss>9) ? ('' + ss) : ('0' + ss);
